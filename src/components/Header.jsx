@@ -4,7 +4,7 @@ function Header() {
     return (
         <header>
             <h1>
-                Trust me I'm a Dogtor
+                Trust me I'm a Dogtor!
             </h1>
         </header>
     );

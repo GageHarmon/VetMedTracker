@@ -2,115 +2,133 @@
     "dogs": [
         {
             "id": 1,
-            "name": "Antwon",
-            "breed": "Husky",
-            "image": "./images/Antwon.jpg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
-        },
-        {
-            "id": 2,
             "name": "Sully",
             "breed": "Golden Retriever",
             "image": "./images/SullyMonster.jpg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Male, Age: 5yrs, English Creme, 77lbs, Neutered",
+            "notes": "Loves people, watch for jumps"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Bindi",
             "breed": "Blue Heeler",
             "image": "./images/BindiBowing.jpg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed",
+            "notes": "An angel, but will nip if provoked."
         },
         {
-            "id": 4,
+            "id": 3,
             "name": "Sunny",
             "breed": "Golden Retriever",
             "image": "./images/SunnyGolden.jpeg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Female, Age: 11yrs, Red, 56lbs, Spayed",
+            "notes": "Reoccuring eye infection"
         },
         {
-            "id": 5,
+            "id": 4,
             "name": "Rock",
             "breed": "Bullmastiff",
             "image": "./images/Rock.png",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Male, Age: 12yrs, Red, 165lbs, Neutered",
+            "notes": "Allergies"
         },
         {
-            "id": 6,
+            "id": 5,
             "name": "Pebbles",
             "breed": "Dachshund",
             "image": "./images/Pebbles.jpg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Female, Age: 1yrs, Black Brindle, 10lbs, Spayed",
+            "notes": "Check for back pain"
         },
         {
-            "id": 7,
+            "id": 6,
             "name": "Beep",
             "breed": "Whippet",
             "image": "./images/Beep.jpg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Female, Age: 7yrs, Brown Brindle, 20lbs, Spayed",
+            "notes": "Fast AF boi"
         },
         {
-            "id": 8,
+            "id": 7,
             "name": "Puppy",
             "breed": "Austrailian Shepherd",
             "image": "./images/AussiePuppy.jpg",
-            "date": "01/30/23",
-            "dose": {
-                "prp": "ml",
-                "acp": "ml",
-                "bmac": "ml",
-                "ha": "ml",
-                "stemcells": "ml"
-            }
+            "description": "Male, Age: 9wks, Black/White, 8lbs, Neutered",
+            "notes": "Update Vaccinations"
+        },
+        {
+            "id": 8,
+            "name": "Antwon",
+            "breed": "Husky",
+            "image": "./images/Antwon.jpg",
+            "description": "Male, Age: 10yrs, Grey/White, 75lbs, Neutered",
+            "notes": "Loud AF"
+        }
+    ],
+    "dose": [
+        {
+            "id": 1,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 2,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 3,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 4,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 5,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 6,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 7,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
+        },
+        {
+            "id": 8,
+            "prp": "Test",
+            "acp": "Test",
+            "bmac": "Test",
+            "ha": "Test",
+            "stemcells": "Test"
         }
     ]
 }

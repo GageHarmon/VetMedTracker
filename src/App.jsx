@@ -1,14 +1,12 @@
 import React from 'react'
-// import Header from "./Header";
-import DogPage from './components/DogPage'
+import Home from './components/Home';
 import './App.css'
 
 function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
-      <DogPage />
+      <Home />
     </div>
   )
 }
