@@ -68,11 +68,11 @@
     "dose": [
         {
             "id": 1,
-            "prp": "Test",
-            "acp": "Test",
-            "bmac": "Test",
-            "ha": "Test",
-            "stemcells": "Test"
+            "prp": "five",
+            "acp": "five",
+            "bmac": "five",
+            "ha": "five",
+            "stemcells": "five"
         },
         {
             "id": 2,

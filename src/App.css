@@ -3,3 +3,11 @@ img {
     height: 200px;
     border-radius: 5%;
 }
+
+/* .NavBar {
+    border-radius: 30%;
+} */
+
+.cards {
+    list-style: none;
+}

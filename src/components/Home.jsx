@@ -31,7 +31,7 @@ function Home() {
                 <Route exact path="/DosePage">
                     <DosePage dogs={dogs} dose={dose} />
                 </Route>
-                <Route exact path="/InfoPage">
+                <Route exact path="/NotesPage">
                     <NotesPage dogs={dogs} />
                 </Route>
             </Switch>
