@@ -1,15 +1,16 @@
-function DogCardNotes({ dog }) {
+function DogCardNotes({ dog, onDelete }) {
     return (
         <div className="DogContainer">
             <h4>{dog.name}</h4>
             <img src={dog.image} alt={dog.name} />
             <p>{dog.breed}</p>
-            {dog && ( // Add a check to see if dose is truthy before accessing its properties
+            <div>
                 <div>
                     <li>Description: {dog.description}</li>
                     <li>Notes: {dog.notes}</li>
                 </div>
-            )}
+                <button onClick={() => onDelete(dog)}>Delete</button>
+            </div>
         </div>
     );
 }

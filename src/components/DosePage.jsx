@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar";
 import DogCardDose from "./DogCardDose";
 import DoseForm from "./DoseForm";
+import NewDogForm from "./NewDogForm"
 
-function DosePage({ dogs, dose }) {
+function DosePage({ dogs, dose, handleDelete, onNewDog }) {
     const [selectedDog, setSelectedDog] = useState(null);
 
     const handleDogClick = (dog) => {
@@ -28,31 +28,33 @@ function DosePage({ dogs, dose }) {
     };
 
     return (
-        <div>
-            <NavBar />
+        <div className="god-container">
             <br />
             {selectedDog ? (
-                <div>
+                <div >
                     <DogCardDose
                         key={selectedDog.id}
                         dog={selectedDog}
+                        onDelete={handleDelete}
                         dose={dose.find((doseData) => doseData.id === selectedDog.id)}
                     />
                     <DoseForm onSubmit={handleDoseSubmit} />
                 </div>
             ) : (
-                <div className="cards">
+                <div className="all-cards">
                     {dogs.map((dog) => (
-                        <div key={dog.id}>
+                        <div key={dog.id} className="single-cards">
                             <li className="DogContainer" onClick={() => handleDogClick(dog)}>
                                 <h4>{dog.name}</h4>
                                 <img src={dog.image} alt={dog.name} />
                                 <p>{dog.breed}</p>
+
                             </li>
                         </div>
                     ))}
                 </div>
             )}
+            <NewDogForm onNewDog={onNewDog} />
         </div>
     );
 }
