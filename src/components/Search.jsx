@@ -7,14 +7,9 @@ function Search({ searchDog, onChangeSearch }) {
 
     return (
         <div className="searchbar">
-            <label htmlFor="search">Search Dogs</label>
-            <input
-                type="text"
-                id="search"
-                placeholder="Search..."
-                value={searchDog}
-                onChange={handleChange}
-            />
+            <label htmlFor="search" style={{ fontWeight: "bold", fontSize: "20px" }}>
+                Search Dogs <input type="text" id="search" placeholder="Search..." value={searchDog} onChange={handleChange} />
+            </label>
         </div>
     );
 }

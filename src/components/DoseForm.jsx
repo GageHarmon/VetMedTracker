@@ -21,51 +21,26 @@ function DoseForm({ onSubmit }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="prp">PRP:</label>
-                <input
-                    type="text"
-                    id="prp"
-                    value={prp}
-                    onChange={(event) => setPrp(event.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="acp">ACP:</label>
-                <input
-                    type="text"
-                    id="acp"
-                    value={acp}
-                    onChange={(event) => setAcp(event.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="bmac">BMAC:</label>
-                <input
-                    type="text"
-                    id="bmac"
-                    value={bmac}
-                    onChange={(event) => setBmac(event.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="stemcells">STEMCELLS:</label>
-                <input
-                    type="text"
-                    id="stemcells"
-                    value={stemcells}
-                    onChange={(event) => setStemcells(event.target.value)}
-                />
-            </div>
-            <div>
-                <label htmlFor="ha">HA:</label>
-                <input
-                    type="text"
-                    id="ha"
-                    value={ha}
-                    onChange={(event) => setHa(event.target.value)}
-                />
-            </div>
+
+            <label htmlFor="prp">PRP:
+                <input type="text" id="prp" value={prp} onChange={(event) => setPrp(event.target.value)} />
+            </label>
+            <br />
+            <label htmlFor="acp">ACP:
+                <input type="text" id="acp" value={acp} onChange={(event) => setAcp(event.target.value)} />
+            </label>
+            <br />
+            <label htmlFor="bmac">BMAC:
+                <input type="text" id="bmac" value={bmac} onChange={(event) => setBmac(event.target.value)} />
+            </label>
+            <br />
+            <label htmlFor="stemcells">STEMCELLS:
+                <input type="text" id="stemcells" value={stemcells} onChange={(event) => setStemcells(event.target.value)} />
+            </label>
+            <br />
+            <label htmlFor="ha">HA:
+                <input type="text" id="ha" value={ha} onChange={(event) => setHa(event.target.value)} />
+            </label>
             <br />
             <button type="submit">Submit</button>
         </form>

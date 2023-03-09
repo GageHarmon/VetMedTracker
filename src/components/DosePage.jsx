@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import DogCardDose from "./DogCardDose";
 import DoseForm from "./DoseForm";
-import NewDogForm from "./NewDogForm"
+// import NewDogForm from "./NewDogForm"  pass onNewDog to DosePage
 
-function DosePage({ dogs, dose, handleDelete, onNewDog }) {
+function DosePage({ dogs, dose, handleDelete }) {
     const [selectedDog, setSelectedDog] = useState(null);
 
     const handleDogClick = (dog) => {
@@ -54,7 +54,7 @@ function DosePage({ dogs, dose, handleDelete, onNewDog }) {
                     ))}
                 </div>
             )}
-            <NewDogForm onNewDog={onNewDog} />
+            {/* <NewDogForm onNewDog={onNewDog} /> */}
         </div>
     );
 }

@@ -36,7 +36,7 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
 
 
     return (
-        <div className="god-container">
+        <div >
             <br />
             {selectedDog ? (
                 <div>

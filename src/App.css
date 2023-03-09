@@ -1,7 +1,8 @@
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .all-cards {
@@ -12,10 +13,37 @@ img {
     overflow-x: scroll;
 }
 
+.search {
+    font-weight: bold;
+}
+
+.searchbar {
+    align-items: center;
+}
+
+label {
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 20px;
+    flex: 0 0 180px;
+    margin-left: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
 .dose-list {
     list-style: none;
 }
 
-.god-container {
-    margin: 100px 0px 0px 0px;
+.dose-list {
+    list-style: none;
 }

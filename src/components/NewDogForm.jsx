@@ -36,8 +36,14 @@ function NewDogForm({ onNewDog }) {
             <h2>Add a Doggo!</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Dog name" value={name} onChange={(e) => setName(e.target.value)} />
+                <br />
+                <br />
                 <input type="text" name="breed" placeholder="Breed" value={breed} onChange={(e) => setBreed(e.target.value)} />
+                <br />
+                <br />
                 <input type="text" name="image" placeholder="Image URL" value={image} onChange={(e) => setImage(e.target.value)} />
+                <br />
+                <br />
                 <button type="submit">Add Dog</button>
             </form>
         </div>

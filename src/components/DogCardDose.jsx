@@ -1,5 +1,3 @@
-import React from "react";
-
 function DogCardDose({ dog, dose, onDelete }) {
     return (
 
