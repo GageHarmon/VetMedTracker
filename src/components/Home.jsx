@@ -48,7 +48,7 @@ function Home() {
 
 
     return (
-        <div>
+        <div >
             <NavBar searchDog={searchDog} onChangeSearch={setSearchDog} />
             <Route exact path="/">
                 <HomePage />

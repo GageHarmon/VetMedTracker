@@ -9,12 +9,12 @@ import Typography from "@mui/material/Typography";
 
 const card = (
     <React.Fragment>
-        <Grid style={{ display: "flex", flexDirection: "row", backgroundColor: "#000" }}>
+        <Grid style={{ display: "flex", flexDirection: "row", border: "1vh solid #000" }}>
             <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "4vh 1vh 4vh 1vh" }}>
                 <Typography variant="h5" component="div">
                     Stemcell Injections
                 </Typography>
-                <Typography variant="body2" style={{ display: "inline-block", marginTop: "20px" }}>Stem-cell therapy is the use of stem cells to treat or prevent a disease or condition. As of 2016, the only established therapy using stem cells is hematopoietic stem cell transplantation. This usually takes the form of a bone-marrow transplantation, but the cells can also be derived from umbilical cord blood.
+                <Typography variant="body2" style={{ display: "inline-block", marginTop: "2vh" }}>Stem-cell therapy is the use of stem cells to treat or prevent a disease or condition. As of 2016, the only established therapy using stem cells is hematopoietic stem cell transplantation. This usually takes the form of a bone-marrow transplantation, but the cells can also be derived from umbilical cord blood.
                 </Typography>
                 <br />
                 <br />
@@ -70,8 +70,8 @@ const card = (
                     <Button size="small" href="https://en.wikipedia.org/wiki/Acepromazine">Learn More</Button>
                 </CardActions>
             </CardContent>
-        </Grid>
-    </React.Fragment>
+        </Grid >
+    </React.Fragment >
 );
 
 function DoseDescCard() {

@@ -28,3 +28,6 @@ This application has the following dependencies:
 
 ## Contributing
 If you find any issues or have suggestions for improvement, please feel free to reach out or submit a pull request.
+
+## Acknowledgments 
+Animista and Material UI. MDN and ChatGPT for general knowledge and code adjustment.
