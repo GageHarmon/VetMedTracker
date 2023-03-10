@@ -17,6 +17,11 @@ function DoseForm({ onSubmit }) {
             stemcells,
         };
         onSubmit(doseData);
+        setPrp("");
+        setAcp("");
+        setBmac("");
+        setHa("");
+        setStemcells("");
     };
 
     return (

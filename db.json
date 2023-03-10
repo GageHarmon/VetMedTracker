@@ -6,7 +6,7 @@
       "breed": "Blue Heeler",
       "image": "./images/BindiBowing.jpg",
       "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed\n",
-      "notes": "An angel, but don't touch her face."
+      "notes": "An angel, but don't touch her face.\n"
     },
     {
       "id": 2,
@@ -113,14 +113,6 @@
       "id": 14
     },
     {
-      "name": "Blue",
-      "breed": "Pitbull",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFyZGYmCr4w2fV5CJVqhnhc1q65V5mIY-5w&usqp=CAU",
-      "description": "Female, Age: 1yr, Blue coat, Spayed",
-      "notes": "Great with people, watch other dogs.",
-      "id": 15
-    },
-    {
       "name": "Pokemon Bindi",
       "breed": "Poochyena",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsCeuSI6nFdPm3STJvmKAfPrzEtqt8umjDOA&usqp=CAU",
@@ -132,11 +124,16 @@
   "dose": [
     {
       "id": 1,
-      "prp": "30ml",
-      "acp": "25ml",
-      "bmac": "26ml",
-      "ha": "42ml",
-      "stemcells": "40ml"
+      "prp": "15ml",
+      "acp": "15ml",
+      "bmac": "15ml",
+      "ha": "15ml",
+      "stemcells": "15ml",
+      "name": "Bindi",
+      "breed": "Blue Heeler",
+      "image": "./images/BindiBowing.jpg",
+      "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed\n",
+      "notes": "An angel, but don't touch her face.\n"
     },
     {
       "id": 2,

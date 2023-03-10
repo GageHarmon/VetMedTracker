@@ -38,6 +38,7 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
             .catch((error) => {
                 console.error(error);
             });
+        setSelectedDog(updatedDog);
     };
 
     const handleNewNotesFormClose = () => {
@@ -72,6 +73,12 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
                 // +++ added the line below from ChatGPT to make the 1st form disappear when the second is opened +++ //
             )}
             {!selectedDog && <NewDogForm onNewDog={onNewDog} />}
+            {selectedDog && !isNewNotesFormOpen && (
+                <button onClick={() => setIsNewNotesFormOpen(true)}>Update Info</button>
+            )}
+            {selectedDog && isNewNotesFormOpen && (
+                <NotesFormUpdate onSubmit={handleNotesSubmit} onClose={handleNewNotesFormClose} />
+            )}
         </div>
     );
 }

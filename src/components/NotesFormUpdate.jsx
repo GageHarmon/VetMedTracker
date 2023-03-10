@@ -12,6 +12,8 @@ function NotesFormUpdate({ onSubmit }) {
             dogNotes,
         };
         onSubmit(notesData);
+        setDogDescription("");
+        setDogNotes("");
     };
 
     return (
