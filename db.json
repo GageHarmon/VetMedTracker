@@ -5,8 +5,8 @@
       "name": "Bindi",
       "breed": "Blue Heeler",
       "image": "./images/BindiBowing.jpg",
-      "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed\n, Cute AF",
-      "notes": "An angel, but will nip if provoked.\nDon't touch her face."
+      "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed\n",
+      "notes": "An angel, but don't touch her face."
     },
     {
       "id": 2,
@@ -53,7 +53,7 @@
       "name": "Beep",
       "breed": "Whippet",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO5iZdzpU6KZuPJbqg0v66cFRkehiuj5heXw&usqp=CAU",
-      "description": "Female, Age: 7yrs, Brown Brindle, 20lbs, Spayed",
+      "description": "Female, Age: 7yrs, Brindle, 20lbs, Spayed\n",
       "notes": "Fast AF boi"
     },
     {
@@ -76,7 +76,7 @@
       "name": "Wilbur",
       "breed": "Australian Cattledog",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXa9MQFFWzx1JWXN6GgLa5XWusLSKFHbez9w&usqp=CAU",
-      "description": "Male, Age: 9wks, Black/White, 9lbs, Neutered",
+      "description": "Male, Age: 11wks, Black/White, 9lbs, Neutered",
       "notes": "Shy",
       "id": 10
     },
@@ -94,7 +94,7 @@
       "breed": "Belgian Malinois",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKXJ29grV2uDqzIRuIydXvWRqb4hCtuyxZHtGr8ZJdfFif-InOfLmdwm2UwjFHxasvquA&usqp=CAU",
       "description": "Male, Age: 9yrs, GoldenFawn, 65lbs, Neutered\n",
-      "notes": "Fur missile, muzzle depending on mood and procedure.\nBeast"
+      "notes": "Fur missile, muzzle depending on mood and procedure."
     },
     {
       "id": 13,
@@ -111,6 +111,22 @@
       "description": "Female, Age: 8yrs, Fawn/White, 43lbs, Spayed",
       "notes": "Loves to jump!",
       "id": 14
+    },
+    {
+      "name": "Blue",
+      "breed": "Pitbull",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFyZGYmCr4w2fV5CJVqhnhc1q65V5mIY-5w&usqp=CAU",
+      "description": "Female, Age: 1yr, Blue coat, Spayed",
+      "notes": "Great with people, watch other dogs.",
+      "id": 15
+    },
+    {
+      "name": "Pokemon Bindi",
+      "breed": "Poochyena",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsCeuSI6nFdPm3STJvmKAfPrzEtqt8umjDOA&usqp=CAU",
+      "description": "Male, Age: 6mos, Black/White,",
+      "notes": "Dark-Type",
+      "id": 16
     }
   ],
   "dose": [
@@ -156,11 +172,11 @@
     },
     {
       "id": 6,
-      "prp": "15ml",
-      "acp": "9ml",
+      "prp": "10ml",
+      "acp": "12ml",
       "bmac": "11ml",
-      "ha": "19ml",
-      "stemcells": "7ml"
+      "ha": "8ml",
+      "stemcells": "9ml"
     },
     {
       "id": 7,

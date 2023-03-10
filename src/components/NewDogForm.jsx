@@ -53,7 +53,7 @@ function NewDogForm({ onNewDog }) {
                 <input type="text" name="description" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)} />
                 <br />
                 <br />
-                <input type="text" name="notes" placeholder="Notes" value={notes} onChange={(e) => setImage(e.target.value)} />
+                <input type="text" name="notes" placeholder="Notes" value={notes} onChange={(e) => setNotes(e.target.value)} />
                 <br />
                 <br />
                 <button type="submit">Add Dog</button>

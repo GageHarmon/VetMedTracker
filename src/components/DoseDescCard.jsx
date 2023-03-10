@@ -76,7 +76,7 @@ const card = (
 
 function DoseDescCard() {
     return (
-        <Box sx={{ width: "auto", margin: "5% 2vh auto 2vh" }} >
+        <Box sx={{ width: "auto", margin: "6vh 2vh 0vh 2vh" }} >
             < Card variant="outlined" > {card} </Card>
         </ Box >
     );
