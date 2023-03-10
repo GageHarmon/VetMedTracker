@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 const card = (
     <React.Fragment>
         <Grid style={{ display: "flex", flexDirection: "row", backgroundColor: "#000" }}>
-            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "40px 10px 40px 10px" }}>
+            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "4vh 1vh 4vh 1vh" }}>
                 <Typography variant="h5" component="div">
                     Stemcell Injections
                 </Typography>
@@ -22,7 +22,7 @@ const card = (
                     <Button size="small" href="https://en.wikipedia.org/wiki/Stem-cell_therapy">Learn More</Button>
                 </CardActions>
             </CardContent>
-            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "40px 10px 40px 10px" }}>
+            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "4vh 1vh 4vh 1vh" }}>
                 <Typography variant="h5" component="div">
                     Hemagglutination
                 </Typography>
@@ -34,7 +34,7 @@ const card = (
                     <Button size="small" href="https://en.wikipedia.org/wiki/Hemagglutination">Learn More</Button>
                 </CardActions>
             </CardContent>
-            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "40px 10px 40px 10px" }}>
+            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "4vh 1vh 4vh 1vh" }}>
                 <Typography variant="h5" component="div">
                     Bone Marrow Aspirate Concentrate
                 </Typography>
@@ -46,7 +46,7 @@ const card = (
                     <Button size="small" href="https://en.wikipedia.org/wiki/Bone_marrow_examination">Learn More</Button>
                 </CardActions>
             </CardContent>
-            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "40px 10px 40px 10px" }}>
+            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "4vh 1vh 4vh 1vh" }}>
                 <Typography variant="h5" component="div">
                     Platelet-rich plasma
                 </Typography>
@@ -58,11 +58,11 @@ const card = (
                     <Button size="small" href="https://en.wikipedia.org/wiki/Platelet-rich_plasma">Learn More</Button>
                 </CardActions>
             </CardContent>
-            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "40px 10px 40px 10px" }}>
+            <CardContent style={{ backgroundColor: "#90fd92", display: "flex", flexDirection: "column", padding: "4vh 1vh 4vh 1vh" }}>
                 <Typography variant="h5" component="div">
                     Acepromazine
                 </Typography>
-                <Typography variant="body2" style={{ display: "inline-block", marginTop: "20px" }}>Acepromazine, acetopromazine, or acetylpromazine is a phenothiazine derivative antipsychotic drug. It was used in humans during the 1950s as an antipsychotic, but is now almost exclusively used on animals as a sedative and antiemetic.
+                <Typography variant="body2" style={{ display: "inline-block", marginTop: "2vh" }}>Acepromazine, acetopromazine, or acetylpromazine is a phenothiazine derivative antipsychotic drug. It was used in humans during the 1950s as an antipsychotic, but is now almost exclusively used on animals as a sedative and antiemetic.
                 </Typography>
                 <br />
                 <br />
@@ -76,7 +76,7 @@ const card = (
 
 function DoseDescCard() {
     return (
-        <Box sx={{ width: "auto", margin: "5% 20px auto 20px" }} >
+        <Box sx={{ width: "auto", margin: "5% 2vh auto 2vh" }} >
             < Card variant="outlined" > {card} </Card>
         </ Box >
     );
