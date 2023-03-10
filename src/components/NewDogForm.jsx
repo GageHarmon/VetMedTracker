@@ -4,6 +4,8 @@ function NewDogForm({ onNewDog }) {
     const [name, setName] = useState("");
     const [breed, setBreed] = useState("");
     const [image, setImage] = useState("");
+    const [description, setDescription] = useState("");
+    const [notes, setNotes] = useState("");
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -12,6 +14,8 @@ function NewDogForm({ onNewDog }) {
             name: name,
             breed: breed,
             image: image,
+            description: description,
+            notes: notes,
         };
 
         // Send the POST request to create a new dog in the database
@@ -28,6 +32,8 @@ function NewDogForm({ onNewDog }) {
                 setName("");
                 setBreed("");
                 setImage("");
+                setDescription("");
+                setNotes("");
             });
     }
 
@@ -42,6 +48,12 @@ function NewDogForm({ onNewDog }) {
                 <br />
                 <br />
                 <input type="text" name="image" placeholder="Image URL" value={image} onChange={(e) => setImage(e.target.value)} />
+                <br />
+                <br />
+                <input type="text" name="description" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)} />
+                <br />
+                <br />
+                <input type="text" name="notes" placeholder="Notes" value={notes} onChange={(e) => setImage(e.target.value)} />
                 <br />
                 <br />
                 <button type="submit">Add Dog</button>

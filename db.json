@@ -29,8 +29,8 @@
       "name": "Wolf",
       "breed": "Grey Wolf",
       "image": "./images/OldWolf.jpg",
-      "description": "Female, Age: 15yrs, Black/White, 65lbs",
-      "notes": "Reoccuring eye infection"
+      "description": "Female, Age: 15yrs, Black/White, 65lbs\n",
+      "notes": "Reoccuring eye infection\n"
     },
     {
       "id": 5,
@@ -76,6 +76,8 @@
       "name": "Wilbur",
       "breed": "Australian Cattledog",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXa9MQFFWzx1JWXN6GgLa5XWusLSKFHbez9w&usqp=CAU",
+      "description": "Male, Age: 9wks, Black/White, 9lbs, Neutered",
+      "notes": "Shy",
       "id": 10
     },
     {
@@ -101,6 +103,14 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEx3uBSnR6_WHJehPhW53C6BuVeCzqFaLOA&usqp=CAU",
       "description": "Male, Age: 5yrs, Golden, 43lbs, Neutered",
       "notes": "Fur missile, muzzle depending on mood and procedure."
+    },
+    {
+      "name": "Dempsey",
+      "breed": "Boxer",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgKspAP8wwAGrKai4uNzAE-Y_RzWSxGgDQUA&usqp=CAU",
+      "description": "Female, Age: 8yrs, Fawn/White, 43lbs, Spayed",
+      "notes": "Loves to jump!",
+      "id": 14
     }
   ],
   "dose": [
