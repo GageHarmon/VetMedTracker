@@ -21,6 +21,7 @@ function DoseForm({ onSubmit }) {
 
     return (
         <form onSubmit={handleSubmit} className="dose-form">
+            <h1>New Dosage</h1>
 
             <label htmlFor="prp">PRP:
                 <input type="text" id="prp" value={prp} onChange={(event) => setPrp(event.target.value)} />

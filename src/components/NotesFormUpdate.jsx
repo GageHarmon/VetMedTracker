@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewNotesForm({ onSubmit }) {
+function NotesFormUpdate({ onSubmit }) {
     const [dogDescription, setDogDescription] = useState("");
     const [dogNotes, setDogNotes] = useState("");
 
@@ -15,7 +15,8 @@ function NewNotesForm({ onSubmit }) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="new-notes-form">
+        <form onSubmit={handleSubmit} className="notes-form-update">
+            <h1>Update Info!</h1>
             <label htmlFor="description">Description:
                 <input type="text" id="dogDescription" value={dogDescription} onChange={(event) => setDogDescription(event.target.value)} />
             </label>
@@ -32,4 +33,4 @@ function NewNotesForm({ onSubmit }) {
     );
 }
 
-export default NewNotesForm;
+export default NotesFormUpdate;

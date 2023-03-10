@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import DogCardNotes from "./DogCardNotes";
-import NewNotesForm from "./NewNotesForm";
+import NotesCard from "./NotesCard";
+import NotesFormUpdate from "./NotesFormUpdate";
 import NewDogForm from "./NewDogForm";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function NotesPage({ dogs, handleDelete, onNewDog }) {
     const [selectedDog, setSelectedDog] = useState("");
@@ -47,18 +49,16 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
             {selectedDog ? (
                 <div className="DogContainer">
                     <div>
-                        <DogCardNotes dog={selectedDog} onDelete={handleDelete} />
+                        <NotesCard dog={selectedDog} onDelete={handleDelete} />
+                        {/* +++++++ SETS THE SELECTED DOG TO NULL SO IT RENDERS THE WHOLE LIST ++++++++ */}
                         <button onClick={() => setSelectedDog("")}>Show all dogs</button>
                     </div>
                     {isNewNotesFormOpen && (
-                        <NewNotesForm
-                            onSubmit={handleNotesSubmit}
-                            onClose={handleNewNotesFormClose}
-                        />
+                        <NotesFormUpdate onSubmit={handleNotesSubmit} onClose={handleNewNotesFormClose} />
                     )}
                 </div>
             ) : (
-                <div className="all-cards">
+                <Carousel showArrows={true} showThumbs={false} showIndicators={false} className="all-cards">
                     {dogs.map((dog) => (
                         <div key={dog.id} className="single-cards">
                             <div onClick={() => handleDogClick(dog)}>
@@ -68,8 +68,8 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
                             </div>
                         </div>
                     ))}
-                </div>
-                ////////added the line below from ChatGPT to make the 1st form disappear when the second is opened////////
+                </Carousel>
+                // +++ added the line below from ChatGPT to make the 1st form disappear when the second is opened +++ //
             )}
             {!selectedDog && <NewDogForm onNewDog={onNewDog} />}
         </div>

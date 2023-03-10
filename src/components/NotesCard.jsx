@@ -1,11 +1,11 @@
-function DogCardNotes({ dog, onDelete }) {
+function NotesCard({ dog, onDelete }) {
     return (
-        <div className="DogCard">
+        <div className="notesCard">
             <h4>{dog.name}</h4>
             <img src={dog.image} alt={dog.name} />
             <p>{dog.breed}</p>
             <div>
-                <div>
+                <div className="notes-list">
                     <li>Description: {dog.description}</li>
                     <li>Notes: {dog.notes}</li>
                 </div>
@@ -15,4 +15,4 @@ function DogCardNotes({ dog, onDelete }) {
     );
 }
 
-export default DogCardNotes;
+export default NotesCard;

@@ -1,7 +1,7 @@
-function DogCardDose({ dog, dose, onDelete }) {
+function DoseCard({ dog, dose, onDelete }) {
     return (
 
-        <div className="DogCard">
+        <div className="doseCard">
             <h4>{dog.name}</h4>
             <img src={dog.image} alt={dog.name} />
             <p>{dog.breed}</p>
@@ -22,7 +22,7 @@ function DogCardDose({ dog, dose, onDelete }) {
     );
 }
 
-export default DogCardDose;
+export default DoseCard;
 
 
 // import * as React from "react";
