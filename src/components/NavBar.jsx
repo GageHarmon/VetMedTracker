@@ -28,9 +28,9 @@ export default function NavBar({ searchDog, onChangeSearch }) {
                 <AppBar color="secondary" style={{ display: "flex", padding: "20px 0px 20px 0px", borderRadius: "15px", position: "relative" }}>
                     <Toolbar variant="dense" style={{ flex: 1 }} >
 
-                        <PetsIcon color="primary" style={{ margin: "0px 50px 0px 50px", fontSize: 50, boxShadow: "0px 0px 15px 10px", borderRadius: "50%" }} />
+                        <PetsIcon color="primary" style={{ margin: "0px 50px 0px 50px", fontSize: 50, boxShadow: "0px 0px 20px 5px #002200", borderRadius: "50%" }} />
 
-                        <Button href="/" variant="contained" color="primary" style={{ flex: 1, margin: "0px 100px 0px 100px", boxShadow: "0px 0px 45px 0px #005800", color: "black", fontWeight: "bold", borderRadius: "15px" }}>
+                        <Button href="/" variant="contained" color="primary" style={{ flex: 1, margin: "0px 100px 0px 100px", boxShadow: "5px 5px 15px 5px #000", color: "black", fontWeight: "bold", borderRadius: "15px" }}>
                             Home
                         </Button>
 
