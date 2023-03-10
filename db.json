@@ -21,48 +21,62 @@
       "name": "Bindi",
       "breed": "Blue Heeler",
       "image": "./images/BindiBowing.jpg",
-      "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed",
-      "notes": "An angel, but will nip if provoked."
+      "description": "Female, Age: 4yrs, Blue Speckled, 38lbs, Spayed\n, Cute AF",
+      "notes": "An angel, but will nip if provoked.\nDon't touch her face."
     },
     {
       "id": 4,
-      "name": "Sunny",
-      "breed": "Golden Retriever",
-      "image": "./images/SunnyGolden.jpeg",
-      "description": "Female, Age: 11yrs, Red, 56lbs, Spayed",
+      "name": "Wolf",
+      "breed": "Grey Wolf",
+      "image": "./images/OldWolf.jpg",
+      "description": "Female, Age: 15yrs, Black/White, 65lbs",
       "notes": "Reoccuring eye infection"
     },
     {
       "id": 5,
+      "name": "Sunny",
+      "breed": "Golden Retriever",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlbNU_-2owGHsspCKNcY_lfP4hTTsugGUCpQ&usqp=CAU",
+      "description": "Female, Age: 11yrs, Red, 56lbs, Spayed",
+      "notes": "Reoccuring eye infection"
+    },
+    {
+      "id": 6,
       "name": "Pebbles",
       "breed": "Dachshund",
-      "image": "./images/Pebbles.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-_V8D3Tg-HAEmMPCrsDcjFuptU2uMyqTcw&usqp=CAU",
       "description": "Female, Age: 1yrs, Black Brindle, 10lbs, Spayed",
       "notes": "Check for back pain"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Beep",
       "breed": "Whippet",
-      "image": "./images/Beep.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO5iZdzpU6KZuPJbqg0v66cFRkehiuj5heXw&usqp=CAU",
       "description": "Female, Age: 7yrs, Brown Brindle, 20lbs, Spayed",
       "notes": "Fast AF boi"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Puppy",
       "breed": "Australian Shepherd",
-      "image": "./images/AussiePuppy.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchYum3ZT-V7zVLl43k3M5mmPo5wYEsUy54g&usqp=CAU",
       "description": "Male, Age: 9wks, Black/White, 8lbs, Neutered",
       "notes": "Update Vaccinations"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Antwon",
       "breed": "Husky",
-      "image": "./images/Antwon.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgAl9v10uxW9vtvsXiBHs4BbpcN6YoV-_8w&usqp=CAU",
       "description": "Male, Age: 10yrs, Grey/White, 75lbs, Neutered",
       "notes": "Loud AF"
+    },
+    {
+      "name": "Wilbur",
+      "breed": "Australian Cattledog",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXa9MQFFWzx1JWXN6GgLa5XWusLSKFHbez9w&usqp=CAU",
+      "id": 10
     }
   ],
   "dose": [
@@ -84,11 +98,11 @@
     },
     {
       "id": 3,
-      "prp": "Test",
-      "acp": "Test",
-      "bmac": "Test",
-      "ha": "Test",
-      "stemcells": "Test"
+      "prp": "5ml",
+      "acp": "5ml",
+      "bmac": "5ml",
+      "ha": "5ml",
+      "stemcells": "5ml"
     },
     {
       "id": 4,

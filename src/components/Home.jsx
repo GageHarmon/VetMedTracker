@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import DosePage from "./DosePage";
 import HomePage from "./HomePage";
 import NotesPage from "./NotesPage";
@@ -48,22 +48,19 @@ function Home() {
 
 
     return (
-        <main>
+        <div>
             <NavBar searchDog={searchDog} onChangeSearch={setSearchDog} />
-            <Switch>
-                <Route exact path="/">
-                    <HomePage />
-                </Route>
-                <Route exact path="/DosePage">
-                    <DosePage dogs={dogsToDisplay} dose={dose} onNewDog={handleNewDog} handleDelete={handleDelete} key={dogsLength} />
-                </Route>
-                <Route exact path="/NotesPage">
-                    <NotesPage dogs={dogsToDisplay} onNewDog={handleNewDog} handleDelete={handleDelete} key={dogsLength} />
-                </Route>
-            </Switch>
-        </main>
+            <Route exact path="/">
+                <HomePage />
+            </Route>
+            <Route exact path="/DosePage">
+                <DosePage dogs={dogsToDisplay} dose={dose} onNewDog={handleNewDog} handleDelete={handleDelete} key={dogsLength} />
+            </Route>
+            <Route exact path="/NotesPage">
+                <NotesPage dogs={dogsToDisplay} onNewDog={handleNewDog} handleDelete={handleDelete} key={dogsLength} />
+            </Route>
+        </div>
     );
 }
 
 export default Home;
-

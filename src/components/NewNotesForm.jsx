@@ -15,14 +15,17 @@ function NewNotesForm({ onSubmit }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="new-notes-form">
             <label htmlFor="description">Description:
                 <input type="text" id="dogDescription" value={dogDescription} onChange={(event) => setDogDescription(event.target.value)} />
             </label>
             <br />
+            <br />
             <label htmlFor="notes">Notes:
                 <input type="text" id="notes" value={dogNotes} onChange={(event) => setDogNotes(event.target.value)} />
             </label>
+            <br />
+            <br />
             <br />
             <button type="submit">Submit</button>
         </form>

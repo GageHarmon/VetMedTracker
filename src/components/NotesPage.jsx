@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import DogCardNotes from "./DogCardNotes";
-import NewDogForm from "./NewDogForm"
-import NewNotesForm from "./NewNotesForm"
+import NewNotesForm from "./NewNotesForm";
+import NewDogForm from "./NewDogForm";
 
 function NotesPage({ dogs, handleDelete, onNewDog }) {
     const [selectedDog, setSelectedDog] = useState("");
+    const [isNewNotesFormOpen, setIsNewNotesFormOpen] = useState(false);
 
     const handleDogClick = (dog) => {
         setSelectedDog(dog);
+        setIsNewNotesFormOpen(true);
     };
 
-
-    // THANK YOU CHAT GPT FOR THE ADDING AND NOT JUST REPLACING
     const handleNotesSubmit = (notesData) => {
         const updatedDog = {
             ...selectedDog,
-            description: selectedDog.description ? selectedDog.description + "\n" + notesData.dogDescription : notesData.dogDescription,
-            notes: selectedDog.notes ? selectedDog.notes + "\n" + notesData.dogNotes : notesData.dogNotes
+            description: selectedDog.description
+                ? selectedDog.description + "\n" + notesData.dogDescription
+                : notesData.dogDescription,
+            notes: selectedDog.notes
+                ? selectedDog.notes + "\n" + notesData.dogNotes
+                : notesData.dogNotes,
         };
         fetch(`http://localhost:3000/dogs/${selectedDog.id}`, {
             method: "PATCH",
@@ -34,23 +38,30 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
             });
     };
 
+    const handleNewNotesFormClose = () => {
+        setIsNewNotesFormOpen(false);
+    };
 
     return (
-        <div >
-            <br />
+        <div className="page-container">
             {selectedDog ? (
-                <div>
-                    <DogCardNotes
-                        dog={selectedDog}
-                        onDelete={handleDelete}
-                    />
-                    <NewNotesForm onSubmit={handleNotesSubmit} />
+                <div className="DogContainer">
+                    <div>
+                        <DogCardNotes dog={selectedDog} onDelete={handleDelete} />
+                        <button onClick={() => setSelectedDog("")}>Show all dogs</button>
+                    </div>
+                    {isNewNotesFormOpen && (
+                        <NewNotesForm
+                            onSubmit={handleNotesSubmit}
+                            onClose={handleNewNotesFormClose}
+                        />
+                    )}
                 </div>
             ) : (
                 <div className="all-cards">
                     {dogs.map((dog) => (
                         <div key={dog.id} className="single-cards">
-                            <div className="DogContainer" onClick={() => handleDogClick(dog)}>
+                            <div onClick={() => handleDogClick(dog)}>
                                 <h4>{dog.name}</h4>
                                 <img src={dog.image} alt={dog.name} />
                                 <p>{dog.breed}</p>
@@ -58,40 +69,70 @@ function NotesPage({ dogs, handleDelete, onNewDog }) {
                         </div>
                     ))}
                 </div>
+                ////////added the line below from ChatGPT to make the 1st form disappear when the second is opened////////
             )}
-            <br />
-            <NewDogForm onNewDog={onNewDog} />
+            {!selectedDog && <NewDogForm onNewDog={onNewDog} />}
         </div>
     );
 }
 
 export default NotesPage;
 
+// import React, { useState } from "react";
+// import DogCardNotes from "./DogCardNotes";
+// import NewNotesForm from "./NewNotesForm"
+// import NewDogForm from "./NewDogForm"
+
+// function NotesPage({ dogs, handleDelete, onNewDog }) {
+//     const [selectedDog, setSelectedDog] = useState("");
+
+//     const handleDogClick = (dog) => {
+//         setSelectedDog(dog);
+//     };
 
 
+//     // Built the patch myself but used **ChatGPT** to modify so that it updates the desc and notes, and not just replace.
+//     const handleNotesSubmit = (notesData) => {
+//         const updatedDog = {
+//             ...selectedDog,
+//             description: selectedDog.description ? selectedDog.description + "\n" + notesData.dogDescription : notesData.dogDescription,
+//             notes: selectedDog.notes ? selectedDog.notes + "\n" + notesData.dogNotes : notesData.dogNotes
+//         };
+//         fetch(`http://localhost:3000/dogs/${selectedDog.id}`, {
+//             method: "PATCH",
+//             headers: {
+//                 "Content-Type": "application/json",
+//             },
+//             body: JSON.stringify(updatedDog),
+//         })
+//             .then((response) => response.json())
+//             .then((data) => {
+//                 setSelectedDog(data); // update selectedDog state with the new data
+//             })
+//             .catch((error) => {
+//                 console.error(error);
+//             });
+//     };
 
-// var React = require('react');
-// var ReactDOM = require('react-dom');
-// var Carousel = require('react-responsive-carousel').Carousel;
 
-// var DemoCarousel = React.createClass({
-//     render() {
-//         return (
-//             <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
-//                 <div>
-//                 {selectedDog ? (
-//                 <div>
-//                     <DogCardNotes
-//                         dog={selectedDog}
-//                         onDelete={handleDelete}
-//                     />
+//     return (
+//         <div className="page-container">
+//             {selectedDog ? (
+//                 <div className="DogContainer" >
+//                     <div>
+//                         <DogCardNotes
+//                             dog={selectedDog}
+//                             onDelete={handleDelete}
+//                         />
+//                         <button onClick={() => setSelectedDog("")}>Show all dogs</button>
+//                     </div>
 //                     <NewNotesForm onSubmit={handleNotesSubmit} />
 //                 </div>
 //             ) : (
-//                 <div className="cards">
+//                 <div className="all-cards">
 //                     {dogs.map((dog) => (
-//                         <div key={dog.id}>
-//                             <div className="DogContainer" onClick={() => handleDogClick(dog)}>
+//                         <div key={dog.id} className="single-cards">
+//                             <div onClick={() => handleDogClick(dog)}>
 //                                 <h4>{dog.name}</h4>
 //                                 <img src={dog.image} alt={dog.name} />
 //                                 <p>{dog.breed}</p>
@@ -100,15 +141,9 @@ export default NotesPage;
 //                     ))}
 //                 </div>
 //             )}
-//             <br />
 //             <NewDogForm onNewDog={onNewDog} />
-//                 </div>
-//             </Carousel>
-//         );
-//     }
-// });
-// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
+//         </div>
+//     );
+// }
 
-// Don't forget to include the css in your page 
-// <link rel="stylesheet" href="carousel.css"/>
-// Begin DemoSliderControls
+// export default NotesPage;

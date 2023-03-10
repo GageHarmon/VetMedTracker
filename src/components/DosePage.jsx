@@ -28,28 +28,30 @@ function DosePage({ dogs, dose, handleDelete }) {
     };
 
     return (
-        <div className="god-container">
-            <br />
+        <div className="page-container">
             {selectedDog ? (
-                <div >
-                    <DogCardDose
-                        key={selectedDog.id}
-                        dog={selectedDog}
-                        onDelete={handleDelete}
-                        dose={dose.find((doseData) => doseData.id === selectedDog.id)}
-                    />
+                <div className="DogContainer2">
+                    <div >
+                        <DogCardDose
+                            key={selectedDog.id}
+                            dog={selectedDog}
+                            onDelete={handleDelete}
+                            dose={dose.find((doseData) => doseData.id === selectedDog.id)}
+                        />
+                        <button onClick={() => setSelectedDog("")}>Show all dogs</button>
+                    </div>
                     <DoseForm onSubmit={handleDoseSubmit} />
                 </div>
             ) : (
                 <div className="all-cards">
                     {dogs.map((dog) => (
                         <div key={dog.id} className="single-cards">
-                            <li className="DogContainer" onClick={() => handleDogClick(dog)}>
+                            <div onClick={() => handleDogClick(dog)}>
                                 <h4>{dog.name}</h4>
                                 <img src={dog.image} alt={dog.name} />
                                 <p>{dog.breed}</p>
 
-                            </li>
+                            </div>
                         </div>
                     ))}
                 </div>

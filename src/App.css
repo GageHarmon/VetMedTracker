@@ -1,30 +1,99 @@
-.header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+.page-container {
+    text-align: center;
+    height: 100vh;
 }
+
+.text-pop-up-top {
+    color: #90fd92;
+    font-size: 32px;
+}
+
+
+.new-dog-form {
+    border-radius: 10px;
+    padding: 0px 30px 0px 30px;
+    height: 270px;
+    width: 200px;
+    background-color: #90fd92;
+    color: black;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.new-notes-form {
+    border-radius: 10px;
+    padding: 60px 20px 0px 20px;
+    width: 200px;
+    height: 275px;
+    background-color: #90fd92;
+    color: black;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.dose-form {
+    border-radius: 10px;
+    width: 265px;
+    height: 300px;
+    background-color: #90fd92;
+    color: black;
+    margin: 3% 0% 0% 30%;
+    padding: 60px 60px 60px 60px;
+}
+
+.dose-list {
+    display: inline-block;
+}
+
+.DogContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.DogContainer2 {
+    display: flex;
+    justify-content: center;
+    margin: 10% 10% 10% 15%;
+}
+
 
 .all-cards {
     list-style: none;
+    max-width: 60%;
     display: flex;
-    margin: 0px 5px 0px 5px;
-    justify-content: space-between;
+    margin: 0px 5px 0px 20%;
     overflow-x: scroll;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0px 20px 30px;
+    border-radius: 15px;
 }
 
-.search {
-    font-weight: bold;
+.single-cards {
+    margin: 0px 20px 0px 20px;
+    border-radius: 15px;
+    background-color: #90fd92;
+    color: black
 }
 
-.searchbar {
-    align-items: center;
+
+h4 {
+    margin: 0;
 }
+
+p {
+    margin: 0;
+}
+
+
 
 label {
     text-align: right;
-    width: 400px;
-    line-height: 26px;
+    width: 700px;
+    line-height: 30px;
     margin-bottom: 10px;
 }
 
@@ -32,12 +101,12 @@ input {
     height: 20px;
     flex: 0 0 180px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
+    width: 250px;
+    height: 225px;
 }
 
 .dose-list {
@@ -47,3 +116,51 @@ img {
 .dose-list {
     list-style: none;
 }
+
+
+
+/* ANIMISTA ANIMATIONS  */
+/* ANIMISTA ANIMATIONS  */
+.text-pop-up-top {
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+
+    100% {
+        -webkit-transform: translateY(-0px);
+        transform: translateY(-0px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #1ab927, 0 2px 0 #1ab927, 0 3px 0 #1ab927, 0 4px 0 #1ab927, 0 5px 0 #1ab927, 0 6px 0 #1ab927, 0 7px 0 #1ab927, 0 8px 0 #1ab927, 0 9px 0 #1ab927, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+
+    100% {
+        -webkit-transform: translateY(-0px);
+        transform: translateY(-0px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #1ab927, 0 2px 0 #1ab927, 0 3px 0 #1ab927, 0 4px 0 #1ab927, 0 5px 0 #1ab927, 0 6px 0 #1ab927, 0 7px 0 #1ab927, 0 8px 0 #1ab927, 0 9px 0 #1ab927, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* ANIMISTA ANIMATIONS  */
+/* ANIMISTA ANIMATIONS  */

@@ -1,6 +1,6 @@
 function DogCardNotes({ dog, onDelete }) {
     return (
-        <div className="DogContainer">
+        <div className="DogCard">
             <h4>{dog.name}</h4>
             <img src={dog.image} alt={dog.name} />
             <p>{dog.breed}</p>
