@@ -18,13 +18,14 @@ This will start the application in development mode. Open http://localhost:3000 
 
 ## Dependencies
 This application has the following dependencies:
+react
+react-dom
+react-router-dom
+react-responsive-carousel
 
-## react
-## react-dom
-## react-router-dom
-## react-responsive-carousel
 ## Database
-## The database used in this application is a JSON file located at http://localhost:3000/dogs and http://localhost:3000/dose.
+The database used in this application is a JSON file located at 
+http://localhost:3000/dogs and http://localhost:3000/dose.
 
 ## Contributing
 If you find any issues or have suggestions for improvement, please feel free to reach out or submit a pull request.
