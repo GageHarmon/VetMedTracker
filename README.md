@@ -1,7 +1,7 @@
 ## README
 This is a React application that uses a db.json to display and manage a list of dogs and their medical treatment doses. The application includes three main components: HomePage, DosePage, and NotesPage, which can be accessed by the navigation bar at the top of the screen. There is also a list of dogs on both the NotesPage and DosePage, along with a search bar to selected a specifc dog and open the forms.
 
-The HomePage component only renders a Header component.
+The HomePage renders a Header component and an InfoCard.
 
 The DosePage component displays all dogs or the selected dog, depending on whether the user has selected a dog or not. When the user selects a dog, it shows that dog's medical treatment dose and a form to submit a new dose.
 
